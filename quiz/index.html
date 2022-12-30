@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz Interativo</title>
+  </head>
+  <body>
+    <header>
+      <h1>quiz</h1>
+    </header>
+    <main>
+      <div class="popup-container removepopup">
+        <div class="popup">
+          <p>Existe questão sem resposta. Se proceguir você deixará de somar pontos.</p>
+          <p>Deseja continuar?</p>
+          <button class="btn sendform">Sim</button>
+          <button class="btn stopsendform">Não</button>
+        </div>
+      </div>
+      <div class="container-score d-none">
+        <p>Você acertou</p>
+        <span>0%</span>
+      </div>
+      <section class="wrapper-form">
+        <h2>Marque a alternativa correta</h2>
+        <form class="form">
+          <div class="container-question">
+            <p>1.Quais os dois operadores lógicos mais utilizados.</p>
+            <div class="answer">
+              <label for="inputAnswer1"><input name="inputAnswer1" type="radio" value="A" /> ! e ()</label>
+              <label for="inputAnswer2"><input name="inputAnswer1" type="radio" value="B" /> && e ||</label>
+              <label for="inputAnswer3"><input name="inputAnswer1" type="radio" value="C" /> + e -</label>
+            </div>
+          </div>
+          <div class="container-question">
+            <p>2.Qual caractere representa o operador lógico de negação.</p>
+            <div class="answer">
+              <label for="inputAnswer4"><input name="inputAnswer2" type="radio" value="A" /> !=</label>
+              <label for="inputAnswer5"><input name="inputAnswer2" type="radio" value="B" /> && </label>
+              <label for="inputAnswer6"><input name="inputAnswer2" type="radio" value="C" /> !</label>
+            </div>
+          </div>
+          <div class="container-question">
+            <p>3.Javascript é uma liguagem de programação baseada em qual paradigma.</p>
+            <div class="answer">
+              <label for="inputAnswer7"><input name="inputAnswer3" type="radio" value="A" /> Funcional</label>
+              <label for="inputAnswer8"><input name="inputAnswer3" type="radio" value="B" /> Orientado a objetos</label>
+              <label for="inputAnswer9"><input name="inputAnswer3" type="radio" value="C" /> Imperativo</label>
+            </div>
+          </div>
+          <div class="container-question">
+            <p>4.Qual o método utilizado para imprimir informações no console.</p>
+            <div class="answer">
+              <label for="inputAnswer10"><input name="inputAnswer4" type="radio" value="A" /> console.log()</label>
+              <label for="inputAnswer11"><input name="inputAnswer4" type="radio" value="B" /> console()</label>
+              <label for="inputAnswer12"><input name="inputAnswer4" type="radio" value="C" /> log.console()</label>
+            </div>
+          </div>
+          <div class="container-question">
+            <p>5.Para que serve o método Math.ceil(x).</p>
+            <div class="answer">
+              <label for="inputAnswer13"
+                ><input name="inputAnswer5" type="radio" value="A" /> Retorna o coseno de um número</label
+              >
+              <label for="inputAnswer14"
+                ><input name="inputAnswer5" type="radio" value="B" /> Calcula a raiz cúbica de um número</label
+              >
+              <label for="inputAnswer15"
+                ><input name="inputAnswer5" type="radio" value="C" /> Faz o arredondamento de um resultado matemático para
+                cima</label
+              >
+            </div>
+          </div>
+          <div class="container-question">
+            <p>6.Marque a opção que indica um tipo referência em Javascript.</p>
+            <div class="answer">
+              <label for="inputAnswer16"><input name="inputAnswer6" type="radio" value="A" /> Objetos literais</label>
+              <label for="inputAnswer17"><input name="inputAnswer6" type="radio" value="B" /> Undefined</label>
+              <label for="inputAnswer18"><input name="inputAnswer6" type="radio" value="C" /> Symbol</label>
+            </div>
+          </div>
+          <input class="submit" type="submit" />
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
